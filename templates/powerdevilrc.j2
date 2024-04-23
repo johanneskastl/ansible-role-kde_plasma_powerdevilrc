@@ -1,0 +1,17 @@
+{# comments in the file will be deleted when changing settings via the GUI #}
+[AC][Display]
+DimDisplayIdleTimeoutSec={{ dimdisplayidletimeoutsec }}
+TurnOffDisplayIdleTimeoutSec={{ turnoffdisplayidletimeoutsec }}
+
+{% if autosuspendaction == 8 or autosuspendaction == 0 %}
+[AC][SuspendAndShutdown]
+AutoSuspendAction={{ autosuspendaction }}
+{% endif %}
+
+{% if batterycriticalaction == 1 %}
+[BatteryManagement]
+BatteryCriticalAction={{ batterycriticalaction }}
+{% endif %}
+
+[LowBattery][SuspendAndShutdown]
+AutoSuspendIdleTimeoutSec={{ autosuspendidletimeoutsec }}

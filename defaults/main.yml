@@ -1,0 +1,15 @@
+---
+# kde_plasma_powerdevilrc/defaults/main.yml
+
+# AC Display
+dimdisplayidletimeoutsec: 120
+turnoffdisplayidletimeoutsec: 300
+
+# AC SuspendAndShutdown
+autosuspendaction: 0
+
+# BatteryManagement
+batterycriticalaction: 1
+
+# LowBattery SuspendAndShutdown
+autosuspendidletimeoutsec: 120

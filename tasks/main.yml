@@ -1,0 +1,8 @@
+---
+# kde_plasma_powerdevilrc/tasks/main.yml
+
+- name: 'Write ~/.config/powerdevilrc'
+  ansible.builtin.template:
+    src: 'powerdevilrc.j2'
+    dest: '~/.config/powerdevilrc'
+    mode: '0644'
